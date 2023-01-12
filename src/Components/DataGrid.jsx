@@ -15,16 +15,16 @@ const DataGrid = () => {
   }
   return (
     <div>
-      <h1 className="text-xl font-bold">Filter Data</h1>
+      <h1 className="text-[35px] font-bold">Filter Data</h1>
       <SearchForm />
       <div>
         {isLoading ? (
-          <h1 className="text-xl">Data Loading....</h1>
+          <h1 className="text-[45px] font-bold">Data Loading....</h1>
         ) : (
-          <div className="w-4/5 grid grid-cols-4 gap-4 m-auto md:grid-cols-4 sm:grid-cols-2 max-sm:grid-cols-1 mb-20">
+          <div className="w-4/5 grid grid-cols-4 font-bold gap-4 m-auto md:grid-cols-4 sm:grid-cols-2 max-sm:grid-cols-1 mb-20">
             {data &&
               data.slice(startIndex, endIndex).map((el) => (
-                <div key={el.capsule_serial} className="bg-white rounded mt-5">
+                <div key={el.capsule_serial} className="bg-white rounded mt-5 hover:shadow">
                   <img
                     src="https://www.universetoday.com/wp-content/uploads/2017/02/dragoncrew.8k.jpg"
                     alt="img"
@@ -32,7 +32,7 @@ const DataGrid = () => {
                   <p className="mt-3">Capsule Serial: {el.capsule_serial}</p>
                   <p>Capsule_Id: {el.capsule_id}</p>
                   <p>Status: {el.status}</p>
-                  <p>Original Launch:{el.original_launch}</p>
+                  <p>Original Launch:{el.original_launch?.split("T")[0]}</p>
                   <p>{el.type}</p>
                   <Popup
                     trigger={
@@ -45,9 +45,10 @@ const DataGrid = () => {
                     {(close) => (
                       <div
                         style={{
-                          backgroundColor: "grey",
+                          backgroundColor: "#939598",
                           width: "380px",
-                          padding: "9px",
+                          padding: "10px",
+                          color:"white"
                         }}
                         className="text-lg font-bold flex flex-col"
                       >

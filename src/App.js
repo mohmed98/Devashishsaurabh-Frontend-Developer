@@ -1,12 +1,12 @@
-import './App.css';
-import Banner from './Components/Banner';
-import DataGrid from './Components/DataGrid';
+import "./App.css";
+import Banner from "./Components/Banner";
+import DataGrid from "./Components/DataGrid";
 
 function App() {
   return (
     <div className="App">
-      <Banner/>
-      <DataGrid/>
+      <Banner />
+      <DataGrid />
     </div>
   );
 }
