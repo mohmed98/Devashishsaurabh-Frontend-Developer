@@ -9,7 +9,7 @@ In this Assignment I Use Tech stack **React Js** and **Tailwindcss** for Develop
 
 - **Netlify Live Link**: https://brainstormforce-task.netlify.app/
 
-- **Presentaion Link**:
+- **Presentaion Link**: https://drive.google.com/file/d/1weQdxHaPw7-Z8ZdNwmtqqAiQ_HG6Borv/view?usp=sharing
 
 - screen Resolution :-1219*850
 
