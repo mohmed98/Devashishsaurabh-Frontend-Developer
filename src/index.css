@@ -1,5 +1,9 @@
 body {
+  background-image: linear-gradient(to top right, #f6f6f6,#d7d7e5);
+  height: 100%;
   margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +15,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@tailwind base;
+@tailwind Components;
+@tailwind utilities;
